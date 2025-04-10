@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Shopease</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/contact.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <h1><i class="fa-solid fa-cart-shopping"></i> Shopease</h1>
+      <div class="user-info">
+        <i class="fa-solid fa-bars hamburger" id="hamburgerBtn"></i>
+        <span id="welcomeMsg"></span>
+        <button id="logout">Logout</button>
+      </div>
+    </nav>
+
+    <nav class="nav-bar" id="navLinks">
+      <a href="./home.html">Home</a>
+      <a href="./products.html">Products</a>
+      <a href="./cart.html">Cart</a>
+      <a href="./wish.html">Wishlist</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html" class="active">Contact</a>
+    </nav>
+
+    <main>
+      <section class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>
+              Have questions or need support? Reach out to us through any of the methods below. We're here to help!
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Shopease Office<br>Garoth, Madhya Pradesh<br>India</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>+91-9876543210 (Mon-Fri, 10am-6pm)</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>support@shopease.example.com</span>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-form-container">
+             <h3>Send Us a Message</h3>
+             <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                 <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+             </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Shopease. All rights reserved.</p>
+    </footer>
+
+    <div id="apopup" class="apopup">
+      <div class="apopup-content">
+        <p id="apopup-message"></p>
+        <button id="apopup-ok-btn">OK</button>
+      </div>
+    </div>
+
+    <script src="../JS/contact.js"></script>
+  </body>
+</html>

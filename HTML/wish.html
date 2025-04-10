@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist | Shopease</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/wish.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <h1><i class="fa-solid fa-cart-shopping"></i> Shopease</h1>
+      <div class="user-info">
+        <i class="fa-solid fa-bars hamburger" id="hamburgerBtn"></i>
+        <span id="welcomeMsg"></span>
+        <button id="logout">Logout</button>
+      </div>
+    </nav>
+
+    <nav class="nav-bar" id="navLinks">
+      <a href="./home.html">Home</a>
+      <a href="./products.html">Products</a>
+      <a href="./cart.html">Cart</a>
+      <a href="./wish.html" class="active">Wishlist</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <h2>My Wishlist</h2>
+      <section id="wishlist-container">
+        </section>
+      <p id="empty-wishlist-msg" class="hidden">
+        Your wishlist is empty.
+        <a href="./products.html">Browse products</a> to add items!
+      </p>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Shopease. All rights reserved.</p>
+    </footer>
+
+    <div id="apopup" class="apopup">
+      <div class="apopup-content">
+        <p id="apopup-message"></p>
+        <button id="apopup-ok-btn">OK</button>
+      </div>
+    </div>
+
+    <script src="../JS/wish.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart | Shopease</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/cart.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <h1><i class="fa-solid fa-cart-shopping"></i> Shopease</h1>
+      <div class="user-info">
+        <i class="fa-solid fa-bars hamburger" id="hamburgerBtn"></i>
+        <span id="welcomeMsg"></span>
+        <button id="logout">Logout</button>
+      </div>
+    </nav>
+
+    <nav class="nav-bar" id="navLinks">
+      <a href="./home.html">Home</a>
+      <a href="./products.html">Products</a>
+      <a href="./cart.html" class="active">Cart</a>
+      <a href="./wish.html">Wishlist</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <h2>Shopping Cart</h2>
+
+      <section id="cart-container">
+        </section>
+
+      <section id="cart-summary" class="hidden">
+         <h3>Cart Total</h3>
+         <p>Total: <span id="total-price">₹0.00</span></p>
+         <button id="checkout-btn">Proceed to Checkout</button>
+      </section>
+
+      <p id="empty-cart-msg" class="hidden">
+        Your cart is empty.
+        <a href="./products.html">Continue shopping</a>!
+      </p>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Shopease. All rights reserved.</p>
+    </footer>
+
+    <div id="apopup" class="apopup">
+      <div class="apopup-content">
+        <p id="apopup-message"></p>
+        <button id="apopup-ok-btn">OK</button>
+      </div>
+    </div>
+
+    <script src="../JS/cart.js"></script>
+  </body>
+</html>
